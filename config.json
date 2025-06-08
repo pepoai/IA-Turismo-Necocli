@@ -1,0 +1,22 @@
+{
+  "servers": {
+    "hf-mcp-server": {
+      "url": "https://huggingface.co/mcp",
+      "headers": {
+        "Authorization": "Bearer {{HUGGINGFACE_TOKEN}}"
+      }
+    }
+  },
+  "model": {
+    "name": "mistralai/Mistral-7B-Instruct-v0.2",
+    "parameters": {
+      "temperature": 0.7,
+      "max_length": 2048,
+      "top_p": 0.95
+    }
+  },
+  "knowledge_base": {
+    "path": "data",
+    "type": "chromadb"
+  }
+}
